@@ -1,0 +1,1 @@
+<div id="sidebars"><div class="sidebars"><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Single') ) : ?><div class="s-sidebar"><h4>Recent Posts</h4><ul><?php wp_get_archives('type=postbypost&limit=5'); ?> </ul></div><?php endif; ?></div> <br style="clear:both"></div>

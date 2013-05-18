@@ -1,0 +1,31 @@
+db1: 
+  name: wp-db
+web1: 
+  PHP_VERSION: "5.3.10"
+  after_build: 
+    - "mv pagoda/wp-config.php wp-config.php"
+    - "rm -R pagoda"
+  name: wp-web
+  php_extensions: 
+    - mysqli
+    - mysql
+    - gd2
+    - eaccelerator
+    - apc
+    - Sun
+    - geoip
+    - http
+    - json
+    - mcrypt
+    - pdo_mysql
+    - phar
+    - xml
+    - simplexml
+    - hash
+    - iconv
+    - curl
+    - soap
+    - mbstring
+    - pdo_sqlite
+  shared_writable_dirs: 
+    - wp-content/uploads/

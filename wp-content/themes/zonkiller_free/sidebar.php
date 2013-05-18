@@ -1,0 +1,1 @@
+<div id="sidebar"><div class="sidebar1"><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Left') ) : ?><div class="right-sidebar"><h4>Recent Posts</h4><ul><?php wp_get_archives('type=postbypost&limit=5'); ?> </ul></div><?php endif; ?></div> <br style="clear:both"></div>
